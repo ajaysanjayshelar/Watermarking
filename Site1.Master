@@ -1,0 +1,84 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="WebApplication1.Site1" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div id="bg">
+        <div id="outer">
+            <div id="header">
+                <div id="logo">
+                    <h1>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <a href="#">Database Watermarking</a>
+                    </h1>
+                </div>
+                <%--  <div id="search">
+                    <form action="" method="post">
+                    <input class="text" name="search" size="32" maxlength="64" /><input class="button"
+                        type="submit" value="Search" />
+                    </form>
+                </div>--%>
+                <div id="nav">
+                    <ul>
+                        <li class="first active"><a href="home.aspx">HOME</a> </li>
+                        <li><a href="login.aspx">LOGIN</a> </li>
+                        <!-- <li>
+								<a href="#">Our Clients</a>
+							</li> -->
+                        <!-- <li>
+								<a href="#">Support</a>
+							</li> -->
+                        <li><a href="#">BLOG</a> </li>
+                        <li><a href="#">ABOUT US</a> </li>
+                        <li class="last"><a href="#">CONTACT US</a> </li>
+                    </ul>
+                    <br class="clear" />
+                </div>
+            </div>
+            <div id="banner">
+                <img src="App_Themes/Theme1/images/pic1.jpg" width="932" height="172" alt="" />
+            </div>
+            <div id="main">
+                <div id="sidebar">
+                    <h3>
+                       <strong> MENU</strong>
+                    </h3>
+                    <ul class="linkedList">
+                        <li class="first"><a href="home.aspx">HOME</a> </li>
+                        <li><a href="login.aspx">LOGIN</a> </li>
+                        <li><a href="#">BLOG</a> </li>
+                        <li><a href="#">ABOUT US</a> </li>
+                        <li><a href="#">CONTACT US</a> </li>
+                    </ul>
+                </div>
+                <div id="content">
+                    
+                    <div id="box2">
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </div>
+                    <%--<div id="box3">
+        hieee
+    </div>--%>
+                    <br class="clear" />
+                </div>
+                <br class="clear" />
+            </div>
+        </div>
+        <div id="copyright">
+            &copy; Your Site Name | Design: <a href="http://templated.org/free-css-templates/seriousface/">
+                DATABASE WATERMARKING</a> by <a href="http://nodethirtythree.com">nodethirtythree</a>
+            + <a href="http://templated.org/">Templated.org</a>
+        </div>
+    </div>
+    <div>
+    </div>
+    </form>
+</body>
+</html>
